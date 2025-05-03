@@ -1,13 +1,9 @@
-const express = require("express");
+const express = require('express');
+const users = require('../mock/dataUsers');
 
 const router = express.Router();
 
-const users = [
-  { id: 1, name: "Alice" },
-  { id: 2, name: "Bob" },
-];
-
-router.get("/", (req, res) => {
+router.get('/', (req, res) => {
   res.json(users);
 });
 
